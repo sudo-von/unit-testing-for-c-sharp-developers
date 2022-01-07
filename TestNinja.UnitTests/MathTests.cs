@@ -21,10 +21,13 @@ namespace TestNinja.UnitTests
         }
 
         [Test]
-        public void Max_FirstArgumentIsGreater_ReturnTheFirstArgument()
+        [TestCase(2, 1 ,2)]
+        [TestCase(1, 1, 2)]
+        [TestCase(1, 1, 1)]
+        public void Max_WhenCalled_ReturnTheGreaterArgument(int a, int b, int expectedResult)
         {
-            int result = _math.Max(2, 1);
-            Assert.That(result, Is.EqualTo(2));
+            int result = _math.Max(a, b);
+            Assert.That(result, Is.EqualTo(expectedResult));
         }
 
         [Test]
