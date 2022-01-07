@@ -22,7 +22,7 @@ namespace TestNinja.UnitTests
 
         [Test]
         [TestCase(2, 1 ,2)]
-        [TestCase(1, 1, 2)]
+        [TestCase(1, 2, 2)]
         [TestCase(1, 1, 1)]
         public void Max_WhenCalled_ReturnTheGreaterArgument(int a, int b, int expectedResult)
         {
@@ -38,6 +38,7 @@ namespace TestNinja.UnitTests
         }
 
         [Test]
+        [Ignore("Because i wanted to!")]
         public void Max_ArgumentsAreEqual_ReturnTheSameArgument()
         {
             int result = _math.Max(1, 1);
