@@ -57,6 +57,7 @@
     <Compile Include="CustomerControllerTests.cs" />
     <Compile Include="DemeritPointsCalculatorTests.cs" />
     <Compile Include="ErrorLoggerTests.cs" />
+    <Compile Include="MockFileReader.cs" />
     <Compile Include="FizzBuzzTests.cs" />
     <Compile Include="HtmlFormatterTests.cs" />
     <Compile Include="MathTests.cs" />
@@ -65,6 +66,7 @@
     <Compile Include="StackTests.cs" />
     <Compile Include="TextFixtureAttribute.cs" />
     <Compile Include="TextFixureAttribute.cs" />
+    <Compile Include="VideoServiceTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
